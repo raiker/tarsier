@@ -22,6 +22,8 @@ If you use this in your own publications, please cite:
 The code in this repository represents only the HDL core of the Tarsier system - it does not include the PCI-Express interface described in the paper, or the corresponding driver. The input to the system is a stream of pixels, and the output is a stream of descriptors.
 
 ## Setup
+The top-level module is `src/ORBMultiscale.sv`. This file contains the external interface.
+
 Due to licensing restrictions, the ORB row RAM module cannot be included in this source dump. The block RAM is not correctly inferred by Quartus when described with SystemVerilog, and so a megafunction must be used. In order to build and use the Tarsier core, it is necessary to recreate this module. The parameters are shown below:
 
 Parameter | Value
